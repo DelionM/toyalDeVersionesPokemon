@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-color: #c6d6d6;
+}
+
+/*Cards*/
+.container-card {
+  max-width: 500px;
+  margin: auto;
+}
+
+.container-card2 {
+  width: 100%;
+  display: flex;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 5%;
+}
+
+h2 {
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#card {
+  width: 100%;
+  margin: 2%;
+  border-radius: 5%;
+  overflow: hidden;
+  background: #000000;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-out;
+}
+
+#card:hover {
+  box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2%);
+}
+
+#card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background-repeat: repeat;
+}
+
+.imagen {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease; /* Agrega una transición suave */
+  transform-style: preserve-3d; /* Preserva la perspectiva 3D en el hover */
+}
+
+.imagen:hover {
+  transform: rotateY(180deg); /* Realiza una rotación en el eje Y de 180 grados al hacer hover */
+}
+
+
+
+#card .contenido-card {
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+a{
+  color: #fcfcfc;
+}
+
+#btn2 {
+  padding: 1.3em 3em;
+  font-size: 9px;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #e00b5b;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+#btn2:hover {
+  background-color: #c7f32c;
+  box-shadow: 0px 15px 20px rgba(88, 210, 247, 0.4);
+  color: #000000;
+  transform: translateY(-7px);
+}
+
+#btn2:active {
+  transform: translateY(-1px);
+}
+
+#btn, #btnG1, #btnG2, #btnG3,
+#btnG4, #btnG5, #btnG6, #btnG7,
+#btnG8, #btnG9{
+  padding: 1.3em 3em;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #e00b5b;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+#btn:hover, #btnG1:hover, #btnG2:hover, #btnG3:hover,
+#btnG4:hover, #btnG5:hover, #btnG6:hover, #btnG7:hover,
+#btnG8:hover, #btnG9:hover{
+  background-color: #306CBD;
+  box-shadow: 0px 15px 20px rgba(223, 216, 1, 0.4);
+  color: #ffffff;
+  transform: translateY(-7px);
+}
+
+#btn:active {
+  transform: translateY(5px);
+}
+
+.input {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #f5e7ec;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: 300ms ease-in-out;
+  font-size: 10px;
+}
+
+.input:focus {
+  background-color: #44749d;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #4f2c4d,
+    -13px -13px 100px #ffffff;
+  color: #ffffff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 12px;
+
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+  .container-card {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin: 15px;
+  }
+
+  .container-card2 {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin: 15px;
+  }
+
+}
+
+
+.button {
+  justify-content: center;
+  display: inline-block;
+  padding: 10px;
+  margin: 3px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-image: linear-gradient(to bottom right, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0px 4px 0px #0072ff;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 0px #0072ff;
+}
