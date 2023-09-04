@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #2f2e30;
+}
+
+
+.button {
+  justify-content: center;
+  display: inline-block;
+  padding: 10px;
+  margin: 3px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-image: linear-gradient(to bottom right, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0px 4px 0px #0072ff;
+  transition: all 0.2s ease-in-out;
+}
+  
+
+/*Cards*/
+.container-card {
+  width: 100%;
+  display: flex;
+  max-width: 800px;
+  margin: auto;
+}
+
+.container-card2 {
+  width: 70%;
+  display: flex;
+  max-width: 800px;
+  margin: auto;
+  background-color: #44749d;
+  border-radius: 5%;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#card {
+  width: 100%;
+  margin: 2%;
+  border-radius: 5%;
+  overflow: hidden;
+  background: #c6d4e1;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-out;
+}
+
+#card:hover {
+  box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2%);
+}
+
+#card img {
+  width: 100%;
+  height: 290px;
+  object-fit: contain;
+  /* background: url(img/agua.webp); */
+  background-repeat: repeat;
+  border-radius: 5%;
+}
+
+#card .contenido-card {
+  padding: 15px;
+  text-align: center;
+  color: #3d1c33;
+  font-size: 20px;
+}
+
+#btn2 {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #4f2c4d;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+#btn2:hover {
+  background-color: #44749D;
+  box-shadow: 0px 15px 20px rgba(88, 210, 247, 0.4);
+  color: #000000;
+  transform: translateY(-7px);
+}
+
+#btn2:active {
+  transform: translateY(-1px);
+}
+
+
+#btn {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #4f2c4d;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+#btn:hover {
+  background-color: #44749D;
+  box-shadow: 0px 15px 20px rgba(223, 216, 1, 0.4);
+  color: #000000;
+  transform: translateY(-7px);
+}
+
+#btn:active {
+  transform: translateY(-1px);
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+  .container-card {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin: 15px;
+  }
+
+  .container-card2 {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin: 15px;
+  }
+
+}
+
+.input {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #4f2c4d;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: 300ms ease-in-out;
+}
+
+.input:focus {
+  background-color: #44749d;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #4f2c4d,
+    -13px -13px 100px #ffffff;
+  color: #000000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+
+}

@@ -1,0 +1,67 @@
+body {
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+  }
+  .contenedorGeneral{
+    padding: 1%;
+    background-color: #0ebfe4;
+  }
+  .contenedor {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    max-width: 300px;
+    /* height:600px; */
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    background-color: #2e3030;
+    border-radius: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/* EFECTOS BUTTON */
+
+#btn {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #DC143C;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #btn:hover {
+    background-color: #0ebfe4;
+    box-shadow: 0px 15px 20px rgba(88, 210, 247, 0.4);
+    color: #000000;
+    transform: translateY(-7px);
+  }
+  
+  #btn:active {
+    transform: translateY(-1px);
+  }
+  
